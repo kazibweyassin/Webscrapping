@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://realpython.github.io/fake-jobs/"
+URL = "https://www.brightermonday.co.ug/jobs"
 page = requests.get(URL)
 
 soup = BeautifulSoup(page.content, "html.parser")
@@ -27,6 +27,3 @@ for python_job in python_jobs:
     print(company_element.text.strip())
     print(location_element.text.strip())
     print()
-    git config --global user.name kazibweyassin
-    git config --global user.email kazibweusama@gmail.com
-          git remote add <name> <url>
